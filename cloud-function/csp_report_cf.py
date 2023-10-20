@@ -6,7 +6,7 @@ import re
 
 app = Flask(__name__)
 
-db = firestore.Client(database='dataStoreDBName', project='yourGCPProject)
+db = firestore.Client(database='dataStoreDBName', project='yourGCPProject')
 
 # Define a regex pattern to match allowed origins so that you have some sort of authentication? as the CF will be public. Good to have.
 allowed_origin_pattern = r"^(.*?\.)?yourDomain\.com$"
